@@ -1,19 +1,19 @@
 //AWS Configuration
-variable access_key {}
-variable secret_key {}
+variable "access_key" {}
+variable "secret_key" {}
 
 variable "region" {
-  default = "eu-west-1"
+  default = "ap-southeast-2"
 }
 
 // Availability zone 1 for the region
 variable "az1" {
-  default = "eu-west-1a"
+  default = "ap-southeast-2a"
 }
 
 // Availability zone 2 for the region
 variable "az2" {
-  default = "eu-west-1c"
+  default = "ap-southeast-2c"
 }
 
 // IAM role that has proper permission for HA
